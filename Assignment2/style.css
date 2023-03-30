@@ -1,0 +1,92 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+ 
+  header{
+    background-image: url(images/cats2.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 5px;
+    height: 450px; 
+  }
+
+  p{
+    text-align: center;
+    float:right;
+    color: rgb(99, 99, 102);
+  }
+
+
+  h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-align: center;
+    color: rgb(186, 194, 78);
+    
+  }
+
+ 
+  h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-align: center;
+    color: rgb(186, 194, 78);
+    position: bottom;
+    
+
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+    
+
+  
+/*small mobile screen*/
+@media screen and (max-width: 500px) {
+    /*grid col 1*/
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: bisque;
+        padding: auto;
+        grid-gap: 5px;
+              
+    }
+}
+/* another media query*/
+@media screen and (min-width: 2000px){
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgb(219, 219, 219);
+        padding: auto;
+        margin-right: 5px;
+      
+        
+    }
+}
+    
+    .grid-item{
+        background-color: rgb(138, 138, 139);
+        border: 1px solid orange;
+        padding: 5px;
+        font-size: auto;
+        
+    }
+            
+      
+        .grid-item-1{
+        grid-column: span 2;
+        
+    }
+    .grid-item-2{
+        grid-row: span 2;
+        
+    }
+    
